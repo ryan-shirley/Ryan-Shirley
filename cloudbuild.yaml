@@ -5,6 +5,9 @@ steps:
 # Build production app
 - name: 'gcr.io/cloud-builders/npm'
   args: ['run', 'build']
-# Deploy
+# Use Default
+- name: 'gcr.io/$PROJECT_ID/firebase'
+  args: ['use default']
+  # Deploy
 - name: 'gcr.io/$PROJECT_ID/firebase'
   args: ['deploy']
