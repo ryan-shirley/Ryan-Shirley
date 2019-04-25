@@ -1,0 +1,75 @@
+.jumbo-box {
+    padding: ($spacer * 10) 0;
+    position: relative;
+    z-index: 1;
+
+    &.circle {
+        overflow: hidden;
+    }
+
+    #circle {
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        border: 60px solid rgba(255, 255, 255, 0.1);
+        left: -160px;
+        top: 120px;
+        z-index: -1;
+
+        @include media-breakpoint-down(sm) {
+            left: -400px;
+            top: 40px;
+        }
+    }
+
+    .btn {
+        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1);
+    }
+
+    &.photography-vertical {
+        border-top: 40px solid $white;
+        border-bottom: 40px solid $white;
+
+        img {
+            position: absolute;
+            top: -5%;
+            right: 10%;
+            bottom: 0;
+            height: 110%;
+
+            @include media-breakpoint-down(md) {
+                max-width: 300px;
+                height: auto;
+                top: 15%;
+            }
+
+            @include media-breakpoint-down(sm) {
+                position: relative;
+                max-width: 100%;
+                max-height: 400px;
+                margin: 0 auto;
+                display: block;
+                right: 0;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            border: none;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: ($spacer * 5) 0;
+    }
+
+    &.main {
+        .illustration {
+            @include media-breakpoint-down(sm) {
+                margin-top: $spacer * 4;
+            }
+        }
+    }
+
+}

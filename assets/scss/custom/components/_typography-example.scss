@@ -1,0 +1,12 @@
+.type-example {
+    margin-bottom: $spacer * 4;
+
+    .sample {
+        font-size: 100px;
+        font-weight: bold;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}

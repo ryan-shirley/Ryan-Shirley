@@ -1,0 +1,59 @@
+.bg-primary, .bg-secondary, .bg-jameson, .bg-kia, .bg-nuan {
+    color: $white;
+
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        color: $white;
+    }
+}
+
+.bg-jameson {
+    background-color: $jameson-primary;
+
+    .contrast {
+        color: $jameson-contrast;
+        font-weight: $headings-font-weight-semi-bold;
+    }
+
+    .btn {
+        color: $jameson-primary;
+    }
+}
+
+.bg-kia {
+    background-color: $kia-primary;
+    color: $white;
+
+    .contrast {
+        color: $kia-contrast;
+        font-weight: $headings-font-weight-semi-bold;
+    }
+
+    .btn {
+        color: $kia-primary;
+    }
+}
+
+.bg-nuan {
+    background-color: $nuan-primary;
+    color: $white;
+
+    .contrast {
+        color: $nuan-contrast;
+        font-weight: $headings-font-weight-semi-bold;
+    }
+
+    .btn {
+        color: $nuan-primary;
+    }
+}
+
+.bg-secondary {
+    .contrast {
+        color: $secondary-contrast;
+        font-weight: $headings-font-weight-semi-bold;
+    }
+
+    .btn {
+        color: $secondary;
+    }
+}

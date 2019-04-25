@@ -1,0 +1,95 @@
+//
+// Variables
+//
+
+// Color system
+$primary: #F2A8AC !default;
+$secondary: #4A90E2 !default;
+$alternate: #A9F0D1 !default;
+$white: #FFFFFF !default;
+
+$heading-primary: #343638;
+$text-primary: #777777;
+$text-secondary: #A6ADB4;
+
+$secondary-contrast: #2A5E9B !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+    "primary":      $primary,
+    "primary-dark": darken($primary, 10%),
+    "primary-light": lighten($primary, 10%),
+    "secondary":    $secondary,
+    "secondary-dark": darken($secondary, 10%),
+    "secondary-light": lighten($secondary, 10%),
+    "alternate":    $alternate,
+    "alternate-dark": darken($alternate, 10%),
+    "alternate-light": lighten($alternate, 10%),
+    "text-primary": $text-primary,
+    "text-secondary": $text-secondary,
+), $theme-colors);
+
+
+// Brand Colours
+$jameson-primary: #007749;
+$jameson-contrast: #02432A;
+
+$kia-primary: #F46161;
+$kia-contrast: #A84545;
+
+$nuan-primary: #FF5E2C;
+$nuan-contrast: #A34022;
+
+
+// Spacing
+$spacer: 1rem !default;
+
+
+// Body
+
+$body-bg: white !default;
+$body-color: $text-primary !default;
+
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,600');
+
+$font-family-sans-serif: 'Open Sans', sans-serif !default;
+$font-weight-semi-bold: 600;
+
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-xl: ($font-size-base * 1.333);
+$font-size-lg: ($font-size-base * 1.111);
+$font-size-sm: ($font-size-base * .7778);
+$font-size-xs: ($font-size-base * .6667);
+
+$line-height-base: 1.8 !default;
+
+$headings-font-family: 'Montserrat', sans-serif !default;
+$headings-color: $heading-primary !default;
+$headings-line-height: 1.2 !default;
+$headings-font-weight: 400 !default;
+$headings-font-weight-semi-bold: 600 !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-padding-y: $spacer / 2.25 !default;
+$btn-padding-x: $spacer * 2.25 !default;
+$btn-font-size: $font-size-sm !default;
+$btn-line-height: 1.2 !default;
+
+$btn-border-radius: 100px !default;
+$btn-font-weight: $font-weight-semi-bold !default;
+
+// Navbar
+$navbar-nav-link-padding-x: 1rem !default;

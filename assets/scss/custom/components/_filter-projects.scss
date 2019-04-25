@@ -1,0 +1,39 @@
+.filter-projects {
+    margin: $spacer 0;
+    color: $text-secondary;
+
+    input {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    label {
+        margin: 0 ($spacer / 2); 
+
+        &:hover {
+            color: $heading-primary;
+            cursor: pointer;
+        }
+
+        &:after {
+            content: '';
+            width: 0;
+            height: 1px;
+            background: $heading-primary;
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            transition: width .25s;
+            transition-timing-function: ease-in-out;
+        }
+    }
+
+    .active {
+        color: $heading-primary;
+
+        &:after {
+            width: 100%;
+        }
+    }
+}

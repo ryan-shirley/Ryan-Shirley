@@ -1,0 +1,13 @@
+.work-project {
+    padding-top: $spacer * 8;
+    padding-bottom: $spacer * 8;
+
+    @include media-breakpoint-down(sm) {
+        padding-top: $spacer * 4;
+        padding-bottom: $spacer * 4;
+
+        img {
+            padding-top: $spacer * 2;
+        }
+    }
+}

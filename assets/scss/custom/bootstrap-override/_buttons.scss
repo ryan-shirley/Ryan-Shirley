@@ -1,0 +1,26 @@
+.btn-primary {
+    color: $white;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+.btn-light {
+    color: $primary;
+    border: 2px solid $white;
+
+    &:hover {
+        color: $white;
+        border-color: $white;
+        background: transparent;
+    }
+}
+
+.navbar-brand {
+    font-size: $font-size-sm;
+    
+    strong {
+        font-size: $font-size-lg;
+    }
+}

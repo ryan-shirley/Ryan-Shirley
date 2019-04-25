@@ -1,0 +1,57 @@
+.navbar {
+    padding: .5rem 0;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+    padding: 0;
+
+    .top-bar {
+        transform: rotate(45deg);
+        transform-origin: 10% 10%;
+    }
+
+    .middle-bar {
+        opacity: 0;
+    }
+
+    .bottom-bar {
+        transform: rotate(-45deg);
+        transform-origin: 10% 90%;
+    }
+
+    &.collapsed {
+        .top-bar {
+            transform: rotate(0);
+        }
+
+        .middle-bar {
+            opacity: 1;
+        }
+
+        .bottom-bar {
+            transform: rotate(0);
+        }
+    }
+
+    &:focus {
+        border: none;
+        outline: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.icon-bar {
+	width: 22px; 
+	height: 2px;
+	background-color: $heading-primary;;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 4px
+}

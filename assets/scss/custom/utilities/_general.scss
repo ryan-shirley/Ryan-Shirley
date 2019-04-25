@@ -1,0 +1,11 @@
+html,body, #__nuxt, #__layout {
+    height: 100%;
+}
+::selection { 
+    background: $secondary;
+    color: $white;
+}
+
+.cc-window {
+    text-align: center;
+}
