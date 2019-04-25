@@ -42,7 +42,7 @@
 
             <work-project
                 secondaryHeading="Photography / Video"
-                heading="St Patricks day video series captured in the UK"
+                heading="St Patrick's day video series captured in the UK"
                 text="A series of videos to showcase various events for Jameson Irish Whiskey for St Patricks day."
                 className="bg-jameson"
                 img="/work/Jameson-project.png"
