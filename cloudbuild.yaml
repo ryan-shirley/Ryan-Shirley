@@ -1,7 +1,7 @@
 steps:
 # Install
 - name: 'gcr.io/cloud-builders/npm'
-  args: ['install', '--only=production']
+  args: ['install']
 # Build production app
 - name: 'gcr.io/cloud-builders/npm'
   args: ['run', 'build']
