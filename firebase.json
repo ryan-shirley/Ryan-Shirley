@@ -10,7 +10,7 @@
       {
         "source": "**",
         "run": {
-          "serviceId": "nuxt-app",
+          "serviceId": "firebase",
           "region": "us-central1"
         }
       }
