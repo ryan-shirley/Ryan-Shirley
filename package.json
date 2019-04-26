@@ -8,7 +8,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "firebase deploy --debug --token \"$FIREBASE_TOKEN\""
   },
   "dependencies": {
     "@bazzite/nuxt-optimized-images": "^0.1.0",
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.5.1",
+    "firebase-tools": "^6.7.1",
     "nodemon": "^1.18.9",
     "precss": "^4.0.0",
     "sass-loader": "^7.1.0",
