@@ -1,20 +1,27 @@
+# steps:
+# # Decrypt .env
+# - name: gcr.io/cloud-builders/gcloud
+#   args:
+#   - kms
+#   - decrypt
+#   - --ciphertext-file=.env.enc
+#   - --plaintext-file=.env
+#   - --location=global
+#   - --keyring=my-project
+#   - --key=cloudbuild-env
+# # Install
+# - name: 'gcr.io/cloud-builders/npm'
+#   args: ['install']
+# # Build production app
+# - name: 'gcr.io/cloud-builders/npm'
+#   args: ['run', 'build']
+# # Deploy
+# - name: 'gcr.io/cloud-builders/npm'
+#   args: ['run', 'deploy']
+
 steps:
-# Decrypt .env
-- name: gcr.io/cloud-builders/gcloud
-  args:
-  - kms
-  - decrypt
-  - --ciphertext-file=.env.enc
-  - --plaintext-file=.env
-  - --location=global
-  - --keyring=my-project
-  - --key=cloudbuild-env
-# Install
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['install']
-# Build production app
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['run', 'build']
-# Deploy
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['run', 'deploy']
+# Build
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/firebase', '.']
+images:
+- 'gcr.io/$PROJECT_ID/firebase'

@@ -8,12 +8,12 @@ ENV HOST 0.0.0.0
 
 COPY package*.json ./
 
-RUN npm install --only=production
+RUN npm install
 
 # Copy local nuxt code to the container
 COPY . .
 
-RUN npm rebuild node-sass
+# RUN npm rebuild node-sass
 
 # Build production app
 RUN npm run build

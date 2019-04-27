@@ -11,9 +11,9 @@
                 </div>
                 <div :class="orderSecond()">
                     <picture v-if="!outerImage">
-                        <source :srcset="imagePathWebP()" type="image/webp" />
-                        <source :srcset="imagePath()" type="image/png" />
-                        <img :src="imagePathWebP()" />
+                        <source :srcset="imagePathWebP()" type="image/webp" class="img-fluid" />
+                        <source :srcset="imagePath()" type="image/png" class="img-fluid" />
+                        <img :src="imagePathWebP()" class="img-fluid" />
                     </picture>
                 </div>
             </div>
@@ -83,10 +83,10 @@ export default {
     },
     methods: {
         imagePath() {
-            return require('~/static/images' + this.img)
+            return require('~/static/images' + this.img + '.png')
         },
         imagePathWebP() {
-            return require('~/static/images' + this.img + '?webp')
+            return require('~/static/images' + this.img + '.webp')
         },
         orderFirst() {
             if(this.swap) {

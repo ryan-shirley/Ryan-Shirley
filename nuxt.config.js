@@ -14,7 +14,14 @@ export default {
             { hid: 'description', name: 'description', content: pkg.description }
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+            { rel: 'icon', sizes: '32x32', href: '/favicon/favicon-32.png' },
+            { rel: 'icon', sizes: '76x76', href: '/favicon/favicon-76.png' },
+            { rel: 'icon', sizes: '96x96', href: '/favicon/favicon-96.png' },
+            { rel: 'icon', sizes: '128x129', href: '/favicon/favicon-128.png' },
+            { rel: 'icon', sizes: '152x152', href: '/favicon/favicon-152.png' },
+            { rel: 'icon', sizes: '180x180', href: '/favicon/favicon-180.png' },
+            { rel: 'icon', sizes: '129x192', href: '/favicon/favicon-192.png' },
+            { rel: 'icon', sizes: '196x196', href: '/favicon/favicon-196.png' },
             { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css' }
         ],
         script: [
@@ -50,9 +57,8 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    [
-      '@bazzite/nuxt-optimized-images',
-    ],
+    [ '@nuxtjs/sitemap' ],
+    [ '@nuxtjs/google-analytics' ],
     // Doc: https://bootstrap-vue.js.org/docs/
     [
         '@nuxtjs/bootstrap-vue', { 
@@ -113,7 +119,36 @@ export default {
   /*
   ** Image Optimisation
   */
-  optimizedImages: {
-    optimizeImages: true
+  // optimizedImages: {
+  //   optimizeImages: true
+  // },
+
+  /*
+  ** Sitemap
+  */
+  sitemap: {
+    hostname: 'https://ryanshirley.ie',
+    path: '/sitemap.xml',
+    gzip: true,
+    exclude: [
+      '/foundation/**'
+    ],
+    routes: [],
+    defaults: {
+      changefreq: 'monthly',
+      priority: 1,
+      lastmod: new Date(),
+      lastmodrealtime: true
+    }
+  },
+
+  /*
+  ** Google Analytics
+  */
+  googleAnalytics: {
+    id: 'UA-46498242-2',
+    debug: {
+      sendHitTask: false
+    }
   }
 }

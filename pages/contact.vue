@@ -1,14 +1,14 @@
 <template>
     <div>
         <section class="mt-5 container">
-            <div class="section-heading">
+            <div class="section-heading" v-if="!success">
                 <h2>Contact Me</h2>
-                <p>A small snippet to the collection of my work to date including both design to development</p>
+                <p>Why not say hi?</p>
             </div>
             <!--/.Heading -->
 
             <div class="row justify-content-md-center">
-                <div class="col-md-8">
+                <div class="col-md-8" v-if="!success">
                     <form @submit.prevent="onSubmit">
                         <div class="row">
                             <div class="col-md-6">
@@ -31,8 +31,24 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-primary mt-5">Submit</button>
+                        <span class="badge badge-danger mt-4" v-if="fail">{{ fail }}</span>
+
+                        <button v-if="!loading" type="submit" class="btn btn-primary mt-5">Submit</button>
+
+                        <button v-if="loading" class="btn btn-primary mt-5 text-white" type="button" disabled>
+                            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                            Sending...
+                        </button>
                     </form>
+                </div>
+
+                <div class="col-md-6 text-center" v-if="success">
+                    <div class="alert alert-alternate-dark mb-5" role="alert">
+                        <h4 class="alert-heading">Success!</h4>
+                        Your message has been sent
+                    </div>
+                    <p>Thanks for getting in touch {{ form.name }}! I will do my best to answer your queries as quick as possible. Thanks in advance for your patience.</p>
+                    <p>Have a great day!</p>
                 </div>
             </div>
         </section>
@@ -49,7 +65,10 @@ export default {
                 name: '',
                 email: '',
                 message: '',
-            })
+            }),
+            success: false,
+            fail: false,
+            loading: false
         }
     },
     head () {
@@ -62,15 +81,21 @@ export default {
     },
     methods: {
             onSubmit() {
-                var app = this;
+                var app = this
+                app.loading = true
 
                 // Submits the form via emailjs.com
                 this.form.submit()
                     .then(resp => {
-                        console.log(resp)
-                        console.log('Successful')
+                        app.success = true
+                        app.loading = false
+                        ga('send', 'event', 'Form', 'submit', 'contact-form');
                     })
-                    .catch(errors => console.log(errors))
+                    .catch(errors => {
+                        console.log(errors)
+                        app.loading = false
+                        app.fail = 'Oops it looks like soemthing went wrong. Try contacting me via email on info@ryanshirley.ie'
+                    })
 
             }
         }

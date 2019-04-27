@@ -25,18 +25,18 @@
                 </div>
                 <div class="col-md-5 offset-md-1">
                     <picture>
-                        <source srcset="~/static/images/my-experience.jpg?webp" type="image/webp" class="img-fluid rounded mb-5" />
-                        <source srcset="~/static/images/my-experience.jpg" type="image/jpg" class="img-fluid rounded mb-5" />
-                        <img src="~/static/images/my-experience.jpg?webp" class="img-fluid rounded mb-5" />
+                        <source srcset="~/static/images/my-experience.webp" type="image/webp" class="img-fluid rounded mb-5" />
+                        <source srcset="~/static/images/my-experience.jpg" type="image/jpeg" class="img-fluid rounded mb-5" />
+                        <img src="~/static/images/my-experience.webp" class="img-fluid rounded mb-5" />
                     </picture>
                 </div>
             </div>
             <div class="row align-items-center">
                 <div class="col-md-5 order-2 order-md-1">
                     <picture>
-                        <source srcset="~/static/images/award.jpg?webp" type="image/webp" class="img-fluid rounded mb-5" />
-                        <source srcset="~/static/images/award.jpg" type="image/jpg" class="img-fluid rounded mb-5" />
-                        <img src="~/static/images/award.jpg?webp" class="img-fluid rounded mb-5" />
+                        <source srcset="~/static/images/award.webp" type="image/webp" class="img-fluid rounded mb-5" />
+                        <source srcset="~/static/images/award.jpg" type="image/jpeg" class="img-fluid rounded mb-5" />
+                        <img src="~/static/images/award.webp" class="img-fluid rounded mb-5" />
                     </picture>
                 </div>
                 <div class="col-md-6 offset-md-1 order-1 order-md-2">

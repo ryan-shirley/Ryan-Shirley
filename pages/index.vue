@@ -10,22 +10,22 @@
                         
                         <client-logo-list>
                             <picture>
-                                <source srcset="~/static/images/brands/Jameson-Logo.png?webp" type="image/webp" />
+                                <source srcset="~/static/images/brands/Jameson-Logo.webp" type="image/webp" />
                                 <source srcset="~/static/images/brands/Jameson-Logo.png" type="image/png" />
-                                <img src="~/static/images/brands/Jameson-Logo.png?webp" />
+                                <img src="~/static/images/brands/Jameson-Logo.webp" />
                             </picture>
                             <picture>
-                                <source srcset="~/static/images/brands/Nuan-Logo.png?webp" type="image/webp" />
+                                <source srcset="~/static/images/brands/Nuan-Logo.webp" type="image/webp" />
                                 <source srcset="~/static/images/brands/Nuan-Logo.png" type="image/png" />
-                                <img src="~/static/images/brands/Nuan-Logo.png?webp" />
+                                <img src="~/static/images/brands/Nuan-Logo.webp" />
                             </picture>
                         </client-logo-list>
                     </div>
                     <div class="col-md-5">
                         <picture>
-                            <source srcset="~/static/images/illustration.png?webp" type="image/webp" class="img-fluid illustration" />
+                            <source srcset="~/static/images/illustration.webp" type="image/webp" class="img-fluid illustration" />
                             <source srcset="~/static/images/illustration.png" type="image/png" class="img-fluid illustration" />
-                            <img src="~/static/images/illustration.png?webp" class="img-fluid illustration" />
+                            <img src="~/static/images/illustration.webp" class="img-fluid illustration" />
                         </picture>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                 heading="St Patrick's day video series captured in the UK"
                 text="A series of videos to showcase various events for Jameson Irish Whiskey for St Patricks day."
                 className="bg-jameson"
-                img="/work/Jameson-project.png"
+                img="/work/Jameson-project"
             />
             <!--/.Jameson Project -->
 
@@ -54,7 +54,7 @@
                 heading="Kia Service Ireland"
                 text="An online appointment booking system for all Kia cars in Ireland. Quotes from local Kia dealers."
                 className="bg-kia"
-                img="/work/Kia-project.png"
+                img="/work/Kia-project"
                 btnText="View Project"
                 btnLink="https://www.kiaservice.ie/"
                 :btnLinkInternal="false"
@@ -67,7 +67,7 @@
                 heading="IADT - Artist Portfolio"
                 text="An e-commerce platform aimed directly at artists to help showcase their work in an elegant professional form."
                 className="bg-secondary"
-                img="/work/Artist-portfolio-project.png"
+                img="/work/Artist-portfolio-project"
                 btnText="View Project"
                 btnLink="https://college.ryanshirley.ie/professional-practice/"
                 :btnLinkInternal="false"

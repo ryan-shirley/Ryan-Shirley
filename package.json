@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-site",
+  "name": "ryan-shirley",
   "version": "1.0.0",
   "description": "Nuxt.js project for personal website",
   "author": "Ryan Shirley",
@@ -12,18 +12,17 @@
     "deploy": "firebase deploy --debug --token \"$FIREBASE_TOKEN\""
   },
   "dependencies": {
-    "@bazzite/nuxt-optimized-images": "^0.1.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "@nuxtjs/bootstrap-vue": "^2.0.4",
+    "@nuxtjs/google-analytics": "^2.2.0",
+    "@nuxtjs/sitemap": "^1.0.0",
     "bootstrap": "^4.1.3",
     "bootstrap-vue": "^2.0.0-rc.11",
     "cross-env": "^5.2.0",
     "i": "^0.3.6",
-    "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-pngquant": "^7.0.0",
     "node-sass": "^4.11.0",
     "npm": "^6.9.0",
     "nuxt": "^2.4.0",
@@ -35,8 +34,7 @@
     "firebase-tools": "^6.7.1",
     "nodemon": "^1.18.9",
     "precss": "^4.0.0",
-    "sass-loader": "^7.1.0",
-    "webp-loader": "^0.4.0"
+    "sass-loader": "^7.1.0"
   },
   "browserslist": [
     "Chrome >= 45",

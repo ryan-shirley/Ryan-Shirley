@@ -8,4 +8,8 @@ html,body, #__nuxt, #__layout {
 
 .cc-window {
     text-align: center;
+
+    @include media-breakpoint-down(sm) {
+        margin: 15px;
+    }
 }
