@@ -165,10 +165,7 @@ export default {
   ** Google Analytics
   */
   googleAnalytics: {
-    id: 'UA-46498242-2',
-    debug: {
-      sendHitTask: false
-    }
+    id: 'UA-46498242-2'
   },
 
   /*
