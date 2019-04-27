@@ -67,8 +67,8 @@ export default {
                         'Video'
                     ],
                     secondaryHeading: 'Photography / Video',
-                    heading: "St Patrick's day video series captured in the UK",
-                    text: 'A series of videos to showcase various events for Jameson Irish Whiskey for St Patricks day.',
+                    heading: "St. Patrick's day video series captured in the UK",
+                    text: "A series of videos to showcase various events for Jameson Irish Whiskey for St. Patrick's day.",
                     className: 'bg-jameson',
                     img: '/work/Jameson-project',
                     btnText: '',
@@ -82,7 +82,7 @@ export default {
                     ],
                     secondaryHeading: 'Front-End Designer',
                     heading: 'Kia Service Ireland',
-                    text: 'An online service booking system for all Kia cars in Ireland. Quotes from local Kia dealers.',
+                    text: 'An online service booking system for all Kia cars in Ireland that provides quotes from local Kia dealers.',
                     className: 'bg-kia',
                     img: '/work/Kia-project',
                     btnText: 'View Project',
@@ -112,7 +112,7 @@ export default {
                     ],
                     secondaryHeading: 'Web Designer / Photographer',
                     heading: 'Luxury Cashmere Clothing',
-                    text: 'A complete website redeisgn and transition of platform from WooCommerce to Shopify. Along with multiple photo shoots.',
+                    text: 'A complete website re-design and transition of platform from WooCommerce to Shopify, in addition to multiple photo shoots.',
                     className: 'bg-nuan photography-vertical',
                     img: '/work/Nuan-photography-project',
                     btnText: 'View Project',
@@ -147,7 +147,7 @@ export default {
         return {
             title: "My Work - Ryan Shirley",
             meta: [
-                { hid: 'description', name: 'description', content: 'Working as both a designer and developer, I have worked across a wide range of projects. My portfolio contains a small snippet of projects I have worked on.' }
+                { hid: 'description', name: 'description', content: 'Working as both a designer and developer, I have worked across a wide range of projects. My portfolio contains a small snippet of some of the projects I have worked on to date.' }
             ]
         }
     }

@@ -5,7 +5,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-7">
                         <h1 class="heading-shadow mb-4">Hello, I’m an <strong>Award Winning</strong> Web Designer</h1>
-                        <p class="mb-4">My name is Ryan Shirley and I love to design and build websites! Turning a hobby of mine into my life. I’m also an avid photographer.</p>
+                        <p class="mb-4">My name is Ryan Shirley and I love to design and build websites! I have turned a hobby that I am passionate about into my career. I’m also an avid photographer.</p>
                         <nuxt-link :to="{ name: 'about' }" class="btn btn-light text-uppercase mb-5">About Me</nuxt-link>
                         
                         <client-logo-list>
@@ -42,8 +42,8 @@
 
             <work-project
                 secondaryHeading="Photography / Video"
-                heading="St Patrick's day video series captured in the UK"
-                text="A series of videos to showcase various events for Jameson Irish Whiskey for St Patricks day."
+                heading="St. Patrick's day video series captured in the UK"
+                text="A series of videos to showcase various events for Jameson Irish Whiskey for St. Patrick's day."
                 className="bg-jameson"
                 img="/work/Jameson-project"
             />
@@ -52,7 +52,7 @@
             <work-project
                 secondaryHeading="Front-End Designer"
                 heading="Kia Service Ireland"
-                text="An online service booking system for all Kia cars in Ireland. Quotes from local Kia dealers."
+                text="An online service booking system for all Kia cars in Ireland that provides quotes from local Kia dealers."
                 className="bg-kia"
                 img="/work/Kia-project"
                 btnText="View Project"
@@ -85,7 +85,7 @@ export default {
       title: "Ryan Shirley Award Winning Website Designer - Dublin, Ireland",
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { hid: 'description', name: 'description', content: "I’m an award winning website designer from Dublin, Ireland.  I love to design and build websites! Expressing my creative skills as both a designer and developer" }
+        { hid: 'description', name: 'description', content: "I’m an award winning website designer from Dublin, Ireland.  I love to design and build websites, expressing my creative skills as both a designer and developer" }
       ]
     }
   }

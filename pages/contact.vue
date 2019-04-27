@@ -3,11 +3,11 @@
         <section class="mt-5 container">
             <div class="section-heading" v-if="!success">
                 <h2>Contact Me</h2>
-                <p>Why not say hi?</p>
+                <p>Why not get in touch if you have a potential project?</p>
             </div>
             <!--/.Heading -->
 
-            <div class="row justify-content-md-center">
+            <div class="row justify-content-md-center mb-5">
                 <div class="col-md-8" v-if="!success">
                     <form @submit.prevent="onSubmit">
                         <div class="row">
@@ -75,7 +75,7 @@ export default {
         return {
             title: "Contact - Ryan Shirley",
             meta: [
-                { hid: 'description', name: 'description', content: 'Easy way to get in touch with me through my website. Award winning website designer Ryan Shirley.' }
+                { hid: 'description', name: 'description', content: 'The easiest way to get in touch with me is through my website. Award winning website designer Ryan Shirley.' }
             ]
         }
     },
