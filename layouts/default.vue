@@ -3,5 +3,6 @@
         <nav-bar />
         <nuxt />
         <custom-footer />
+        <scroll-top />
     </main>
 </template>

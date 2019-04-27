@@ -25,11 +25,29 @@ export default {
             { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css' }
         ],
         script: [
-            { src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js', body: true },
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', body: true },
-            { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', body: true },
-            { src: 'https://cdn.emailjs.com/sdk/2.3.2/email.min.js' },
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js' }
+            { 
+              src: 'https://code.jquery.com/jquery-3.3.1.min.js', 
+              type: "text/javascript",
+              body: true 
+            },
+            { 
+              src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', 
+              type: "text/javascript", 
+              body: true 
+            },
+            { 
+              src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', 
+              type: "text/javascript",
+              body: true 
+            },
+            { 
+              src: 'https://cdn.emailjs.com/sdk/2.3.2/email.min.js',
+              type: "text/javascript",
+            },
+            { 
+              src: 'https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js',
+              type: "text/javascript",
+            }
         ],
     },
 
@@ -59,6 +77,7 @@ export default {
   modules: [
     [ '@nuxtjs/sitemap' ],
     [ '@nuxtjs/google-analytics' ],
+    [ '@nuxtjs/redirect-module' ],
     // Doc: https://bootstrap-vue.js.org/docs/
     [
         '@nuxtjs/bootstrap-vue', { 
@@ -150,5 +169,14 @@ export default {
     debug: {
       sendHitTask: false
     }
-  }
+  },
+
+  /*
+  ** Page Redirects
+  */
+  redirect: [
+    // Redirect options here
+    { from: '^/portfolio', to: '/work', statusCode: 301 }, // 301 permanent
+    { from: '^/services', to: '/', statusCode: 301 } // 301 permanent
+  ]
 }

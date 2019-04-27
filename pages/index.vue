@@ -52,7 +52,7 @@
             <work-project
                 secondaryHeading="Front-End Designer"
                 heading="Kia Service Ireland"
-                text="An online appointment booking system for all Kia cars in Ireland. Quotes from local Kia dealers."
+                text="An online service booking system for all Kia cars in Ireland. Quotes from local Kia dealers."
                 className="bg-kia"
                 img="/work/Kia-project"
                 btnText="View Project"
@@ -82,10 +82,10 @@
 export default {
   head () {
     return {
-      title: "Ryan Shirley Award Winning Website Desginer",
+      title: "Ryan Shirley Award Winning Website Designer - Dublin, Ireland",
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { hid: 'description', name: 'description', content: 'My custom description' }
+        { hid: 'description', name: 'description', content: "I’m an award winning website designer from Dublin, Ireland.  I love to design and build websites! Expressing my creative skills as both a designer and developer" }
       ]
     }
   }

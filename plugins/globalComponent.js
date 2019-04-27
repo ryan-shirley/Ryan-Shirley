@@ -8,6 +8,7 @@ import NavbarItem from "../components/NavbarItem";
 import ClientLogoList from "../components/ClientLogoList";
 import WorkProject from "../components/WorkProject";
 import CustomFormInput from "../components/Forms/CustomFormInput";
+import ScrollTop from "../components/ScrollTop";
 import Footer from "../components/Footer";
 
 Vue.component(ColourSwatchList.name, ColourSwatchList);
@@ -19,6 +20,7 @@ Vue.component(NavbarItem.name, NavbarItem);
 Vue.component(ClientLogoList.name, ClientLogoList);
 Vue.component(WorkProject.name, WorkProject);
 Vue.component(CustomFormInput.name, CustomFormInput);
+Vue.component(ScrollTop.name, ScrollTop);
 Vue.component(Footer.name, Footer);
 
 import VueObserveVisibility from 'vue-observe-visibility'

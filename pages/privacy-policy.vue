@@ -58,9 +58,9 @@
 export default {
     head () {
         return {
-            title: "Privacy Policy",
+            title: "Privacy Policy - Ryan Shirley",
             meta: [
-                { hid: 'description', name: 'description', content: '' }
+                { hid: 'description', name: 'description', content: 'Privacy Policy describes how personal information is collected, used, and shared.' }
             ]
         }
     }

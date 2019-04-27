@@ -57,3 +57,11 @@
         color: $secondary;
     }
 }
+
+.error-404 {
+    padding: ($spacer * 5) 0;
+    
+    @include media-breakpoint-down(sm) {
+        padding: ($spacer * 5) 0;
+    }
+}

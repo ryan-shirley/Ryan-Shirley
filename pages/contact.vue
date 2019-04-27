@@ -73,9 +73,9 @@ export default {
     },
     head () {
         return {
-            title: "Contact",
+            title: "Contact - Ryan Shirley",
             meta: [
-                { hid: 'description', name: 'description', content: '' }
+                { hid: 'description', name: 'description', content: 'Easy way to get in touch with me through my website. Award winning website designer Ryan Shirley.' }
             ]
         }
     },

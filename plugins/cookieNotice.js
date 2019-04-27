@@ -14,7 +14,7 @@ if (process.browser) {
       "theme": "classic",
       "position": "bottom-right",
       "content": {
-        "message": "I use those internet cookie things on this site. Don't worry I will share it with you:",
+        "message": "I use those internet cookie things on this site. Learn more at:",
         "link": "Privacy Policy",
         "href": "https://www.ryanshirley.ie/privacy-policy"
       }

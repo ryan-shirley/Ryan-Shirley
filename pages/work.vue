@@ -82,7 +82,7 @@ export default {
                     ],
                     secondaryHeading: 'Front-End Designer',
                     heading: 'Kia Service Ireland',
-                    text: 'An online appointment booking system for all Kia cars in Ireland. Quotes from local Kia dealers.',
+                    text: 'An online service booking system for all Kia cars in Ireland. Quotes from local Kia dealers.',
                     className: 'bg-kia',
                     img: '/work/Kia-project',
                     btnText: 'View Project',
@@ -112,11 +112,11 @@ export default {
                     ],
                     secondaryHeading: 'Web Designer / Photographer',
                     heading: 'Luxury Cashmere Clothing',
-                    text: 'A platform aimed directly at artists to help showcase their work in an elegant professional form. With the added feature of selling direct on site.',
+                    text: 'A complete website redeisgn and transition of platform from WooCommerce to Shopify. Along with multiple photo shoots.',
                     className: 'bg-nuan photography-vertical',
                     img: '/work/Nuan-photography-project',
-                    btnText: '',
-                    btnLink: '',
+                    btnText: 'View Project',
+                    btnLink: 'https://nuancashmere.com',
                     btnLinkInternal: false,
                     swap: false,
                     outerImage: true,
@@ -133,7 +133,7 @@ export default {
 			if(categories === "All") {
 				return app.projects;
 			} else {
-				return app.projects.filter(function(project) {
+				return app.projects.filter(project => {
                     for (var i in project.categories) {
                         if(project.categories[i] === categories) {
                             return project.categories[i]
@@ -145,9 +145,9 @@ export default {
     },
     head () {
         return {
-            title: "Work",
+            title: "My Work - Ryan Shirley",
             meta: [
-                { hid: 'description', name: 'description', content: '' }
+                { hid: 'description', name: 'description', content: 'Working as both a designer and developer, I have worked across a wide range of projects. My portfolio contains a small snippet of projects I have worked on.' }
             ]
         }
     }
