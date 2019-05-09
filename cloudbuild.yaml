@@ -1,33 +1,31 @@
 # steps:
-# # Decrypt .env
-# - name: gcr.io/cloud-builders/gcloud
-#   args:
-#   - kms
-#   - decrypt
-#   - --ciphertext-file=.env.enc
-#   - --plaintext-file=.env
-#   - --location=global
-#   - --keyring=my-project
-#   - --key=cloudbuild-env
-# # Install
-# - name: 'gcr.io/cloud-builders/npm'
-#   args: ['install']
-# # Build production app
-# - name: 'gcr.io/cloud-builders/npm'
-#   args: ['run', 'build']
-# # Deploy
-# - name: 'gcr.io/cloud-builders/npm'
-#   args: ['run', 'deploy']
+# # Build the container image
+# - name: 'gcr.io/cloud-builders/docker'
+#   args: ['build', '-t', 'gcr.io/$PROJECT_ID/nuxt-app', '.']
+# # push the container image to Container Registry
+# - name: 'gcr.io/cloud-builders/docker'
+#   args: ['push', 'gcr.io/$PROJECT_ID/nuxt-app']
+# # Deploy container image to Cloud Run
+# - name: 'gcr.io/cloud-builders/gcloud'
+#   args: ['beta', 'run', 'deploy', 'nuxt-app', '--image', 'gcr.io/$PROJECT_ID/nuxt-app', '--region', 'us-central1']
+# images:
+# - 'gcr.io/$PROJECT_ID/nuxt-app'
 
 steps:
-# Build the container image
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/nuxt-app', '.']
-# push the container image to Container Registry
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/$PROJECT_ID/nuxt-app']
-# Deploy container image to Cloud Run
-- name: 'gcr.io/cloud-builders/gcloud'
-  args: ['beta', 'run', 'deploy', 'nuxt-app', '--image', 'gcr.io/$PROJECT_ID/nuxt-app', '--region', 'us-central1']
-images:
-- 'gcr.io/$PROJECT_ID/nuxt-app'
+# install
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['install']
+
+# install nuxt dependencies
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['install']
+  dir: 'public'
+
+# generate the static site
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['run', 'generate']
+  dir: 'public'
+
+# deploy just the hosting part
+- name: 'gcr.io/$PROJECT_ID/firebase'
+  args: ['deploy', '--only', 'hosting']
