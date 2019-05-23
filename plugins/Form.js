@@ -61,7 +61,7 @@ export default class Form {
         // axios
         return new Promise((resolve, reject) => {
             
-            emailjs.send('gmail', 'template_jugXseDE', app.data())
+            emailjs.send('gmail_princeofcod', 'template_jugXseDE', app.data())
                 .then(response => {
                     resolve(response.text)
                 })

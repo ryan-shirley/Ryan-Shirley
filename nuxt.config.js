@@ -97,8 +97,12 @@ export default {
             }
             ]
         }
-    ]
-    
+    ],
+    [
+        'vue-scrollto/nuxt', { 
+            duration: 600 
+        }
+    ],
   ],
 
 
@@ -145,21 +149,21 @@ export default {
   /*
   ** Sitemap
   */
-  sitemap: {
-    hostname: 'https://ryanshirley.ie',
-    path: '/sitemap.xml',
-    gzip: true,
-    exclude: [
-      '/foundation/**'
-    ],
-    routes: [],
-    defaults: {
-      changefreq: 'monthly',
-      priority: 1,
-      lastmod: new Date(),
-      lastmodrealtime: true
-    }
-  },
+//   sitemap: {
+//     hostname: 'https://ryanshirley.ie',
+//     path: '/sitemap.xml',
+//     gzip: true,
+//     exclude: [
+//       '/foundation/**'
+//     ],
+//     routes: [],
+//     defaults: {
+//       changefreq: 'monthly',
+//       priority: 1,
+//       lastmod: new Date(),
+//       lastmodrealtime: true
+//     }
+//   },
 
   /*
   ** Google Analytics

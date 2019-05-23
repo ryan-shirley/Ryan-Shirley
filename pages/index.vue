@@ -30,10 +30,16 @@
                     </div>
                 </div>
             </div>
+            <div class="scroller">
+                <a href="#" v-scroll-to="'#featured-projects'">
+                    <font-awesome-icon :icon="['fas', 'arrow-down']"/>
+                </a>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194 87"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M0,87C40,87,54,0,97,0s56,87,97,87"/></g></g></svg>
+            </div>
             <span id="circle"></span>
         </section>
 
-        <section>
+        <section id="featured-projects">
             <div class="section-heading">
                 <h2>Featured Projects</h2>
                 <p>A small collection of my work</p>
