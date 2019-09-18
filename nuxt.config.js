@@ -105,6 +105,13 @@ export default {
     ],
   ],
 
+  /*
+  ** Build 404 page
+  */
+  generate: {
+    routes: ['404']
+  },
+
 
   /*
   ** Build configuration
