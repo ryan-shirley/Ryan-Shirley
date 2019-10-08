@@ -1,6 +1,6 @@
-# nuxt-site
+# Personal Website
 
-> Nuxt.js project for personal website
+> This is my own personal website built with Nuxt.js.
 
 ## Build Setup
 
