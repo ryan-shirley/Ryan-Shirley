@@ -103,6 +103,25 @@ export default {
             duration: 600 
         }
     ],
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: "AIzaSyDA3HyiAEctvFmbpEhguSlrCR6tJR7OwbA",
+          authDomain: "ryan-shirley-personal.firebaseapp.com",
+          databaseURL: "https://ryan-shirley-personal.firebaseio.com",
+          projectId: "ryan-shirley-personal",
+          storageBucket: "ryan-shirley-personal.appspot.com",
+          messagingSenderId: "387300783732",
+          appId: "1:387300783732:web:fab3bf67fd4dff7a",
+          measurementId: "G-DRKLH63CW6"
+        },
+        services: {
+          performance: true,
+          analytics: true,
+        }
+      }
+    ]
   ],
 
   /*
