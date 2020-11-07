@@ -101,7 +101,7 @@ export default {
                     className: 'bg-secondary',
                     img: '/work/Artist-portfolio-project',
                     btnText: 'View Project',
-                    btnLink: 'https://college.ryanshirley.ie/professional-practice/',
+                    btnLink: 'https://www.youtube.com/watch?v=yMgcinfZc2Q',
                     btnLinkInternal: false,
                     swap: false,
                 },
